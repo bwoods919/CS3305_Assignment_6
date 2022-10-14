@@ -70,12 +70,13 @@ public class MyTestBST {
                     break;
                 case 5: // Path from root to element
                     System.out.print("Enter the node to get the path to: ");
-                    String path = input.next();
+                    String nodePath = input.next();
 
                     System.out.println("Testing method Path from Root to Data Element (Option 5)");
-                    System.out.print("Path from root to " + path + ": ");
-                    tree.path(path);
-                    System.out.println();
+                    System.out.print("Path from root to " + nodePath + ": ");
+                    java.util.ArrayList<BST.TreeNode<String>> path = tree.path(nodePath);
+                    for (int i = 0; path != null && i < path.size(); i++)
+                        System.out.print(path.get(i).element + " ");
                     break;
                 case 6: // Check if tree is empty
                     System.out.println("Testing method Check if Empty Tree (Option 6)");
