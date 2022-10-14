@@ -3,7 +3,7 @@
 
 public class TestBSTDelete {
    public static void main(String[] args) {
-    
+
       // Create a BST
       BST<String> tree = new BST<String>();
       tree.insert("George");

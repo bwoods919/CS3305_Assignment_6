@@ -3,7 +3,7 @@
 
 public class TestBST {
    public static void main(String[] args) {
-    
+
       // Create a BST of strings 
       BST<String> tree = new BST<String>();
       tree.insert("George");
