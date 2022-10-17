@@ -29,13 +29,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bwood\IdeaProjects\CS3305_Assignment_6\src" />
@@ -50,6 +50,8 @@
       <option name="presentableId" value="Default" />
       <updated>1665692767972</updated>
       <workItem from="1665692769224" duration="15144000" />
+      <workItem from="1665931745263" duration="98000" />
+      <workItem from="1665931852418" duration="4068000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1665710438421</created>
