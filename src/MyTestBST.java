@@ -16,8 +16,8 @@ public class MyTestBST {
         Scanner input = new Scanner(System.in);
         
         // Create the BSTs
-        BST<String> strTree = new BST<String>();
-        BST<Integer> intTree = new BST<Integer>();
+        BST<String> strTree = new BST<>();
+        BST<Integer> intTree = new BST<>();
         
         int option;
         boolean data = true;
@@ -109,24 +109,36 @@ public class MyTestBST {
                     break;
                     
                 case 3: // Search for data element
+                    System.out.print("Enter element to search for: ");
+                    if (data) {
+                        String searchStr = input.next();
 
-                    System.out.println("Testing method Search for Data Element (Option 3)");
+                        System.out.println("Testing method Search for Data Element (Option 3)");
+                        System.out.print("Is " + searchStr + " in the tree? " +
+                                strTree.search(searchStr));
+
+                    } else {
+                        int searchInt = input.nextInt();
+
+                        System.out.println("Testing method Search for Data Element (Option 3)");
+                        System.out.print("Is " + searchInt + " in the tree? " +
+                                intTree.search(searchInt));
+                    }
 
                     break;
                 case 4: // Print strTree size
+                    System.out.println("Testing method Tree size (Option 4)");
                     if (data) {
-                        System.out.println("Testing method Tree size (Option 4)");
                         System.out.println("Tree size: " + strTree.getSize());
                     
                     } else {
-                        System.out.println("Testing method Tree size (Option 4)");
                         System.out.println("Tree size: " + intTree.getSize());
                     }
                     break;
                     
                 case 5: // Path from root to element
+                    System.out.print("Enter the node to get the path to: ");
                     if (data) {
-                        System.out.print("Enter the node to get the path to: ");
                         String nodePathStr = input.next();
 
                         System.out.println("Testing method Path from Root to Data Element (Option 5)");
@@ -136,7 +148,6 @@ public class MyTestBST {
                             System.out.print(path.get(i).element + " ");
                     
                     } else {
-                        System.out.print("Enter the node to get the path to: ");
                         int nodePathInt = input.nextInt();
 
                         System.out.println("Testing method Path from Root to Data Element (Option 5)");
@@ -148,58 +159,49 @@ public class MyTestBST {
                     break;
                     
                 case 6: // Check if strTree is empty
+                    System.out.println("Testing method Check if Empty Tree (Option 6)");
+
                     if (data) {
-                        System.out.println("Testing method Check if Empty Tree (Option 6)");
                         System.out.println("Is empty strTree? " + strTree.isEmpty());
                     
                     } else {
-                        System.out.println("Testing method Check if Empty Tree (Option 6)");
                         System.out.println("Is empty strTree? " + intTree.isEmpty());
                     }
                     break;
                     
                 case 7: // Print preorder traversal
+                    System.out.println("\nTesting method Preorder Traversal (Option 7)");
+                    System.out.print("Preorder: ");
                     if (data) {
-                        System.out.println("\nTesting method Preorder Traversal (Option 7)");
-                        System.out.print("Preorder: ");
                         strTree.preorder();
-                        System.out.println();
-                    
+
                     } else {
-                        System.out.println("\nTesting method Preorder Traversal (Option 7)");
-                        System.out.print("Preorder: ");
                         intTree.preorder();
-                        System.out.println();
                     }
+                    System.out.println();
                     break;
                     
                 case 8: // Print Inorder traversal
+                    System.out.println("Testing method Inorder Traversal (Option 8)");
+                    System.out.print("Inorder: ");
                     if (data) {
-                        System.out.println("Testing method Inorder Traversal (Option 8)");
-                        System.out.print("Inorder: ");
                         strTree.inorder();
-                        System.out.println();
-                    
+
                     } else {
-                        System.out.println("Testing method Inorder Traversal (Option 8)");
-                        System.out.print("Inorder: ");
                         intTree.inorder();
-                        System.out.println();
                     }
+                    System.out.println();
                     break;
                     
                 case 9: // Print Postorder traversal
+                    System.out.println("Testing method Postorder Traversal (Option 9)");
+                    System.out.println("Postorder: ");
                     if (data) {
-                        System.out.println("Testing method Postorder Traversal (Option 9)");
-                        System.out.println("Postorder: ");
                         strTree.postorder();
-                        System.out.println();
                     } else {
-                        System.out.println("Testing method Postorder Traversal (Option 9)");
-                        System.out.println("Postorder: ");
                         intTree.postorder();
-                        System.out.println();
                     }
+                    System.out.println();
                     break;
                     
                 case 10: // Exit
