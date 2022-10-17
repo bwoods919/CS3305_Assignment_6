@@ -1,3 +1,10 @@
+// Name: <your name>
+// Class: CS 3305/Section#
+// Term: Fall 2022
+// Instructor: Dr. Haddad
+// Assignment: 6
+// IDE Name: IntelliJ
+
 // Class BST.java
 // Textbook, Listing 25.5, Page 937
 

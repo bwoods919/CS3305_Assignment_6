@@ -1,3 +1,10 @@
+// Name: <your name>
+// Class: CS 3305/Section#
+// Term: Fall 2022
+// Instructor: Dr. Haddad
+// Assignment: 6
+// IDE Name: IntelliJ
+
 // Class AbstrcatTree.java
 // Textbook, Listing 25.4, Page 936
 

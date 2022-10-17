@@ -1,3 +1,9 @@
+// Name: <your name>
+// Class: CS 3305/Section#
+// Term: Fall 2022
+// Instructor: Dr. Haddad
+// Assignment: 6
+// IDE Name: IntelliJ
 
 // 3 needs to be finished
 
