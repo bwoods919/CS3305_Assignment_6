@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b11f12ab-6723-474b-8f36-2d6df14b63f8" name="Changes" comment="">
+    <list default="true" id="b11f12ab-6723-474b-8f36-2d6df14b63f8" name="Changes" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AbstractTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyTestBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyTestBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RemoveDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestBSTDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestBSTDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +58,9 @@
       <workItem from="1665692769224" duration="15144000" />
       <workItem from="1665931745263" duration="98000" />
       <workItem from="1665931852418" duration="5276000" />
+      <workItem from="1666292130722" duration="2808000" />
+      <workItem from="1666365738733" duration="593000" />
+      <workItem from="1666477933746" duration="1194000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1665710438421</created>
@@ -79,6 +88,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />

@@ -1,5 +1,6 @@
-// Name: <your name>
-// Class: CS 3305/Section#
+// Name: Brendan Woods
+// Class: CS 3305/0110
+
 // Term: Fall 2022
 // Instructor: Dr. Haddad
 // Assignment: 6
@@ -12,16 +13,31 @@ import java.util.Scanner;
 
 public class MyTestBST {
     public static void main(String[] args) {
-        
+
         Scanner input = new Scanner(System.in);
-        
+
         // Create the BSTs
         BST<String> strTree = new BST<>();
         BST<Integer> intTree = new BST<>();
-        
+
         int option;
         boolean data = true;
-        
+
+        System.out.print("\nEnter the data type(integer/string): ");
+        String inputStr = input.next();
+
+        if (inputStr.equals("integer") || inputStr.equals("Integer") ||
+                inputStr.equals("int") || inputStr.equals("Int") ||
+                inputStr.equals("i") || inputStr.equals("I")) {
+            data = false;
+        } else if (inputStr.equals("string") || inputStr.equals("String") ||
+                inputStr.equals("str") || inputStr.equals("Str") ||
+                inputStr.equals("s") || inputStr.equals("S")) {
+            data = true;
+        }
+        else
+            System.out.println("Please select either integer or string.");
+
         while (true) {
 
             printMenu();
@@ -30,10 +46,10 @@ public class MyTestBST {
 
                 case 0: // Enter data type
                     System.out.print("\nEnter the data type(integer/string): ");
-                    String inputStr = input.next();
-                    
-                    if (inputStr.equals("integer") || inputStr.equals("Integer") || 
-                        inputStr.equals("int") || inputStr.equals("Int") || 
+                    inputStr = input.next();
+
+                    if (inputStr.equals("integer") || inputStr.equals("Integer") ||
+                            inputStr.equals("int") || inputStr.equals("Int") ||
                             inputStr.equals("i") || inputStr.equals("I")) {
                         data = true;
                     } else if (inputStr.equals("string") || inputStr.equals("String") ||
@@ -41,10 +57,10 @@ public class MyTestBST {
                             inputStr.equals("s") || inputStr.equals("S")) {
                         data = false;
                     }
-                    else 
+                    else
                         System.out.println("Please select either integer or string.");
                     break;
-                    
+
                 case 1: // Insert data element
                     if (data) {
                         System.out.print("\nEnter element to insert in the strTree: ");
@@ -59,23 +75,23 @@ public class MyTestBST {
                         System.out.print("\nBST after inserting: " + insertStr + " (Inorder): ");
                         strTree.inorder();
                         System.out.println();
-                    
+
                     } else {
                         System.out.print("\nEnter element to insert in the intTree: ");
                         int insertInt = input.nextInt();
-                        
+
                         System.out.println("\nTesting method Insert Data Element (Option 1)");
                         System.out.print("BST before inserting: " + insertInt + " (Inorder): ");
                         intTree.inorder();
-                        
+
                         intTree.insert(insertInt);
-                        
+
                         System.out.print("\nBST after inserting " + insertInt + " (Inorder): ");
                         intTree.inorder();
                         System.out.println();
                     }
                     break;
-                    
+
                 case 2: // Delete data element
                     if (data) {
                         System.out.print("\nEnter element to delete from the strTree: ");
@@ -91,11 +107,11 @@ public class MyTestBST {
                         System.out.print("\nBST after deleting: " + deleteStr + " (Inorder): ");
                         strTree.inorder();
                         System.out.println();
-                    
+
                     } else {
                         System.out.print("\nEnter element to delete from the intTree: ");
                         int deleteInt = input.nextInt();
-                        
+
                         System.out.println("\nTesting method Insert Data Element (Option 2)");
                         System.out.print("BST before deleting: " + deleteInt + " (Inorder): ");
                         intTree.inorder();
@@ -107,7 +123,7 @@ public class MyTestBST {
                         System.out.println();
                     }
                     break;
-                    
+
                 case 3: // Search for data element
                     System.out.print("Enter element to search for: ");
                     if (data) {
@@ -130,12 +146,12 @@ public class MyTestBST {
                     System.out.println("Testing method Tree size (Option 4)");
                     if (data) {
                         System.out.println("Tree size: " + strTree.getSize());
-                    
+
                     } else {
                         System.out.println("Tree size: " + intTree.getSize());
                     }
                     break;
-                    
+
                 case 5: // Path from root to element
                     System.out.print("Enter the node to get the path to: ");
                     if (data) {
@@ -146,7 +162,7 @@ public class MyTestBST {
                         ArrayList<BST.TreeNode<String>> path = strTree.path(nodePathStr);
                         for (int i = 0; path != null && i < path.size(); i++)
                             System.out.print(path.get(i).element + " ");
-                    
+
                     } else {
                         int nodePathInt = input.nextInt();
 
@@ -157,18 +173,18 @@ public class MyTestBST {
                             System.out.print(path.get(i).element + " ");
                     }
                     break;
-                    
+
                 case 6: // Check if strTree is empty
                     System.out.println("Testing method Check if Empty Tree (Option 6)");
 
                     if (data) {
                         System.out.println("Is empty strTree? " + strTree.isEmpty());
-                    
+
                     } else {
                         System.out.println("Is empty strTree? " + intTree.isEmpty());
                     }
                     break;
-                    
+
                 case 7: // Print preorder traversal
                     System.out.println("\nTesting method Preorder Traversal (Option 7)");
                     System.out.print("Preorder: ");
@@ -180,7 +196,7 @@ public class MyTestBST {
                     }
                     System.out.println();
                     break;
-                    
+
                 case 8: // Print Inorder traversal
                     System.out.println("Testing method Inorder Traversal (Option 8)");
                     System.out.print("Inorder: ");
@@ -192,7 +208,7 @@ public class MyTestBST {
                     }
                     System.out.println();
                     break;
-                    
+
                 case 9: // Print Postorder traversal
                     System.out.println("Testing method Postorder Traversal (Option 9)");
                     System.out.println("Postorder: ");
@@ -203,7 +219,7 @@ public class MyTestBST {
                     }
                     System.out.println();
                     break;
-                    
+
                 case 10: // Exit
                     System.exit(255);
                     break;
