@@ -162,6 +162,7 @@ public class MyTestBST {
                         ArrayList<BST.TreeNode<String>> path = strTree.path(nodePathStr);
                         for (int i = 0; path != null && i < path.size(); i++)
                             System.out.print(path.get(i).element + " ");
+                        System.out.println();
 
                     } else {
                         int nodePathInt = input.nextInt();
@@ -171,6 +172,7 @@ public class MyTestBST {
                         ArrayList<BST.TreeNode<Integer>> path = intTree.path(nodePathInt);
                         for (int i = 0; path != null && i < path.size(); i++)
                             System.out.print(path.get(i).element + " ");
+                        System.out.println();
                     }
                     break;
 
