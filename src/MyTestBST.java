@@ -1,6 +1,5 @@
 // Name: Brendan Woods
 // Class: CS 3305/0110
-
 // Term: Fall 2022
 // Instructor: Dr. Haddad
 // Assignment: 6
@@ -51,11 +50,11 @@ public class MyTestBST {
                     if (inputStr.equals("integer") || inputStr.equals("Integer") ||
                             inputStr.equals("int") || inputStr.equals("Int") ||
                             inputStr.equals("i") || inputStr.equals("I")) {
-                        data = true;
+                        data = false;
                     } else if (inputStr.equals("string") || inputStr.equals("String") ||
                             inputStr.equals("str") || inputStr.equals("Str") ||
                             inputStr.equals("s") || inputStr.equals("S")) {
-                        data = false;
+                        data = true;
                     }
                     else
                         System.out.println("Please select either integer or string.");
@@ -97,8 +96,7 @@ public class MyTestBST {
                         System.out.print("\nEnter element to delete from the strTree: ");
                         String deleteStr = input.next();
 
-                        System.out.println("Testing method Insert Data Element (Option 2)");
-                        System.out.println("\nTesting method Insert Data Element (Option 1)");
+                        System.out.println("\nTesting method Delete Data Element (Option 2)");
                         System.out.print("BST before deleting: " + deleteStr + " (Inorder): ");
                         strTree.inorder();
 
@@ -112,7 +110,7 @@ public class MyTestBST {
                         System.out.print("\nEnter element to delete from the intTree: ");
                         int deleteInt = input.nextInt();
 
-                        System.out.println("\nTesting method Insert Data Element (Option 2)");
+                        System.out.println("\nTesting method Delete Data Element (Option 2)");
                         System.out.print("BST before deleting: " + deleteInt + " (Inorder): ");
                         intTree.inorder();
 
