@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b11f12ab-6723-474b-8f36-2d6df14b63f8" name="Changes" comment="init">
+    <list default="true" id="b11f12ab-6723-474b-8f36-2d6df14b63f8" name="Changes" comment="Fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyTestBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyTestBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RemoveDuplicates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestBSTDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestBSTDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +55,9 @@
       <workItem from="1666292130722" duration="2808000" />
       <workItem from="1666365738733" duration="593000" />
       <workItem from="1666477933746" duration="1194000" />
+      <workItem from="1666536687539" duration="859000" />
+      <workItem from="1666539489331" duration="31000" />
+      <workItem from="1666562533768" duration="409000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1665710438421</created>
@@ -83,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666025971425</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixes">
+      <created>1666536934684</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666536934684</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="add data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add data" />
+    <MESSAGE value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
 </project>

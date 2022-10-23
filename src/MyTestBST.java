@@ -130,6 +130,7 @@ public class MyTestBST {
                         System.out.println("Testing method Search for Data Element (Option 3)");
                         System.out.print("Is " + searchStr + " in the tree? " +
                                 strTree.search(searchStr));
+                        System.out.println();
 
                     } else {
                         int searchInt = input.nextInt();
@@ -137,6 +138,7 @@ public class MyTestBST {
                         System.out.println("Testing method Search for Data Element (Option 3)");
                         System.out.print("Is " + searchInt + " in the tree? " +
                                 intTree.search(searchInt));
+                        System.out.println();
                     }
 
                     break;
