@@ -20,22 +20,37 @@ public class MyTestBST {
         BST<Integer> intTree = new BST<>();
 
         int option;
+        int insertInt = 0;
         boolean data = true;
-
-        System.out.print("\nEnter the data type(integer/string): ");
         String inputStr = input.next();
+        boolean firstRun = false;
 
-        if (inputStr.equals("integer") || inputStr.equals("Integer") ||
-                inputStr.equals("int") || inputStr.equals("Int") ||
-                inputStr.equals("i") || inputStr.equals("I")) {
-            data = false;
-        } else if (inputStr.equals("string") || inputStr.equals("String") ||
-                inputStr.equals("str") || inputStr.equals("Str") ||
-                inputStr.equals("s") || inputStr.equals("S")) {
-            data = true;
+        while (!firstRun) {
+
+            printMenu();
+            option = input.nextInt();
+
+            if (option != 0) {
+                System.out.println("Invalid Selection, first you must choose option 0!");
+            } else {
+                    System.out.print("\nEnter the data type(integer/string): ");
+                    inputStr = input.next();
+
+                    if (inputStr.equals("integer") || inputStr.equals("Integer") ||
+                            inputStr.equals("int") || inputStr.equals("Int") ||
+                            inputStr.equals("i") || inputStr.equals("I")) {
+                        data = false;
+                    } else if (inputStr.equals("string") || inputStr.equals("String") ||
+                            inputStr.equals("str") || inputStr.equals("Str") ||
+                            inputStr.equals("s") || inputStr.equals("S")) {
+                        data = true;
+                    } else
+                        System.out.println("Please select either integer or string.");
+                    firstRun = true;
+            }
         }
-        else
-            System.out.println("Please select either integer or string.");
+
+
 
         while (true) {
 
@@ -77,7 +92,12 @@ public class MyTestBST {
 
                     } else {
                         System.out.print("\nEnter element to insert in the intTree: ");
-                        int insertInt = input.nextInt();
+
+                        if(input.hasNextInt()){
+                            insertInt = input.nextInt();
+                        }else{
+                            System.out.println("Please enter an Integer");
+                        }
 
                         System.out.println("\nTesting method Insert Data Element (Option 1)");
                         System.out.print("BST before inserting: " + insertInt + " (Inorder): ");
